@@ -1,0 +1,25 @@
+#home {
+  height: 100vh;
+}
+.landingPage {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#about .container {
+  display: flex;
+  /* flex-direction: column; */
+}
+.about-text {
+  flex: 1;
+}
+.description {
+  padding-top: 5%;
+}
+.about-image {
+  flex: 1;
+  width: 50%;
+  margin-left: 5%;
+}

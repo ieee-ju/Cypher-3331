@@ -1,0 +1,15 @@
+.invisibleButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.btn-invisible {
+  color: white;
+  border: none;
+  background-color: white;
+}
+
+.appear {
+  display: none;
+}
