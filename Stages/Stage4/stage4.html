@@ -14,12 +14,39 @@
       crossorigin="anonymous"
     />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stage4.css" />
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <h1>Stage 4</h1>
+    <!-- <p id="myPDF">Open a PDF file <a href="/assets/simple.pdf">PDF</a>.</p>
+    <button type="button" class="btn btn-primary" data-download="myPDF">
+      Download
+    </button>
+    <script>
+      const downloadLink = document.querySelectorAll("[data-download]");
+
+      downloadLink.forEach((button) => {
+        const id = button.dataset.download;
+        // const image = document.getElementById("id");
+        const a = document.createElement("a");
+        a.href = "/assets/simple.pdf";
+        a.download = "";
+        a.style.display = "none";
+
+        button.addEventListener("click", () => {
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+        });
+      });
+    </script> -->
+
+    <button type="button" class="btn btn-primary">
+      <a href="/assets/sample.pdf" download="ICanGiveAnyName"></a>Download
+    </button>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
       integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
