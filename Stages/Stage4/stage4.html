@@ -20,32 +20,15 @@
   </head>
   <body>
     <h1>Stage 4</h1>
-    <!-- <p id="myPDF">Open a PDF file <a href="/assets/simple.pdf">PDF</a>.</p>
-    <button type="button" class="btn btn-primary" data-download="myPDF">
-      Download
-    </button>
-    <script>
-      const downloadLink = document.querySelectorAll("[data-download]");
-
-      downloadLink.forEach((button) => {
-        const id = button.dataset.download;
-        // const image = document.getElementById("id");
-        const a = document.createElement("a");
-        a.href = "/assets/simple.pdf";
-        a.download = "";
-        a.style.display = "none";
-
-        button.addEventListener("click", () => {
-          document.body.appendChild(a);
-          a.click();
-          document.body.removeChild(a);
-        });
-      });
-    </script> -->
-
-    <button type="button" class="btn btn-primary">
-      <a href="/assets/sample.pdf" download="ICanGiveAnyName"></a>Download
-    </button>
+    <div class="center-button">
+      <a
+        href="/assets/sample.pdf"
+        download="ICanGiveAnyName"
+        target="_blank"
+        class="btn btn-primary"
+        >Download</a
+      >
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"

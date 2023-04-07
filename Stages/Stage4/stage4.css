@@ -1,0 +1,8 @@
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  scale: 1.5;
+}
