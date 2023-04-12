@@ -19,7 +19,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <section id="navigationBar">
+    <!-- <section id="navigationBar">
       <nav class="navbar" style="background-color: #e3f2fd">
         <div class="container">
           <a class="navbar-brand" href="#">
@@ -27,15 +27,21 @@
           </a>
         </div>
       </nav>
-    </section>
+    </section> -->
 
     <section id="text-field">
+      <img
+        src="/assets/img/logo.png"
+        alt=""
+        width="14%"
+        style="margin-left: 2%"
+      />
       <div class="stage3-question">
         <h1
           class="display-4"
           style="margin: 0 0 1% 0; color: #000; font-weight: 400"
         >
-          Stage 3
+          Congratulations
         </h1>
         <h1 class="display-6 text-center">
           Well, well, well... looks like somebody managed to clear stage 2!
@@ -45,18 +51,20 @@
           mastermind, a puzzle-solving prodigy, a... oh who are we kidding,
           you're probably just really good at guessing. But hey, at least now
           you can add "Professional Guessing Champion" to your resume! Keep up
-          the great work, you lucky duck! Hah! That’s all imagination for sure
-          but the good thing is that in today’s world, even imaginary entities
-          count! In fact, if you really deserve being at this stage right now,
-          you could probably even give me a number for such things by just
-          looking around!
+          the great work, you
+          <span>
+            <a href="/Stages/luckyduck/luckyduc.html" class="luck"
+              ><i>Lucky duck!</i></a
+            ></span
+          >
+          <br /><br />
+          Hah! That’s all imagination for sure but the good thing is that in
+          today’s world, even imaginary entities count! In fact, if you really
+          deserve being at this stage right now, you could probably even give me
+          a number for such things by just looking around!<br /><br />
+          You Can Right?
         </h1>
-        <div class="row g-3 align-items-center">
-          <div class="col-auto">
-            <label for="stageThreeInput" class="col-form-label"
-              >You can, right?</label
-            >
-          </div>
+        <div class="row g-3 align-items-center text-center-2">
           <div class="col-auto">
             <input
               type="text"
@@ -64,6 +72,8 @@
               class="form-control"
               aria-labelledby="passwordHelpInline"
               placeholder="input your answer here"
+              class="stage3Input"
+              style="background-color: transparent; color: white"
             />
           </div>
           <!-- <div class="col-auto">
@@ -72,15 +82,15 @@
               type?
             </span>
           </div> -->
-        </div>
 
-        <input
-          class="btn btn-primary"
-          type="submit"
-          value="Submit"
-          onclick="checkInput()"
-          style="margin-top: 2%"
-        />
+          <input
+            class="btn btn-primary stage3-btn"
+            type="submit"
+            value="Submit"
+            onclick="checkInput()"
+            style="margin-top: 2%; width: 50%"
+          />
+        </div>
       </div>
     </section>
 
@@ -94,7 +104,7 @@
     <script>
       function checkInput() {
         var a = document.getElementById("stageThreeInput");
-        if (a.value == "6" || a.value == "six") {
+        if (a.value == "25" || a.value == "Twenty Five") {
           document.getElementById("err").innerHTML =
             "Congratulatiions, Proceed to the next Stage";
           document.getElementById("proceedToStage4").innerHTML = "Stage 4";

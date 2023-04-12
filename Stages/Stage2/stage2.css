@@ -19,9 +19,9 @@ div.stageTwo {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120vh;
+  height: 100vh;
   flex-direction: column;
-  background-image: url("/assets/img/stage\ 2.png");
+  background-image: url("/assets/img/Stage2BG.png");
   background-repeat: no-repeat;
   background-size: cover;
 }

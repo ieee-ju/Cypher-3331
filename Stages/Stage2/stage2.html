@@ -20,11 +20,19 @@
   </head>
   <body>
     <div class="stageTwo">
-      <h1 style="color: #fff">Stage 2</h1>
-      <h1 class="display-4" style="margin: 0 0 1% 0; color: #fff">
+      <!-- <h1 style="color: #fff">Stage 2</h1> -->
+      <h1 class="display-4" style="margin: 0 0 1% 0; color: #606b79">
         What If Cryptography Just Works Randomly?
       </h1>
-
+      <!-- <p style="color: #606b79; width: 50%; font-size: 18px">
+        A plot to steal the famous painting Mona Lisa is has been discovered by
+        the CIA. It has been known that the conspirators have managed to build a
+        secret entrance to the room containing the said painting at the Louvre
+        Museum. The CIA have also intercepted an audio from the transmission
+        lines of the conspirators, that would reveal the location of the secret
+        path. See if you can foil the conspiracy by revealing the secret
+        message in this clip.
+      </p> -->
       <video
         src="/assets/Stage2.mp4"
         class="object-fit-cover border rounded"
@@ -59,6 +67,7 @@
             id="stageTwoInput"
             class="form-control"
             aria-labelledby="passwordHelpInline"
+            placeholder="What did you hear again?"
           />
         </div>
         <!-- <div class="col-auto">
@@ -92,7 +101,7 @@
     <script>
       function checkInput() {
         var a = document.getElementById("stageTwoInput");
-        if (a.value == "... -.-. .-. . . -.  - --- .--.  .-. .. --. .... -") {
+        if (a.value == "SCREEN TOP RIGHT") {
           document.getElementById("err").innerHTML =
             "Congratulatiions, Proceed to the next Stage";
           document.getElementById("proceedToStage3").innerHTML = "Stage 3";
