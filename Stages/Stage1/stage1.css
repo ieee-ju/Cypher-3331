@@ -33,7 +33,8 @@ h1 {
 }
 
 .stage1btn:hover {
-  background-color: #fff;
+  background-color: white;
+  color: #661b1c;
   border-color: #661b1c;
 }
 
@@ -56,12 +57,22 @@ h1 {
 .btn-stage-2 {
   background-color: #661b1c;
   border-color: #ffff;
+  border-radius: 5px;
+  color: #fff;
 }
 .btn-stage-2 :hover {
-  background-color: #fff;
   border-color: #661b1c;
 }
 
 .stageOne {
   background-color: transparent;
+}
+
+.stageOne:hover {
+  background-color: brown;
+  color: white;
+}
+
+.appear {
+  display: none;
 }

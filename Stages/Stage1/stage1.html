@@ -68,25 +68,13 @@
 
       <h1 class="display-4" id="err"></h1>
       <button
-        class="btn"
+        class="appear btn btn-primary"
         onclick="window.location.href = '/Stages/Stage2/stage2.html';"
         id="proceedToStage2"
       ></button>
     </div>
-    <script>
-      function checkInput() {
-        var a = document.getElementById("stageOneInput");
-        if (a.value == "w" || a.value == "W") {
-          document.getElementById("err").innerHTML =
-            "Congratulations, Proceed to the next Stage";
-          document.getElementById("proceedToStage2").innerHTML = "Stage 2";
-          document.getElementById("proceedToStage2").classList.add =
-            "btn-stage-2";
-        } else {
-          document.getElementById("err").innerHTML = "wrong";
-        }
-      }
-    </script>
+
+    <script src="stage1.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"

@@ -19,16 +19,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- <section id="navigationBar">
-      <nav class="navbar" style="background-color: #e3f2fd">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="#" alt="IEEE JUSB" width="30" height="24" />
-          </a>
-        </div>
-      </nav>
-    </section> -->
-
     <section id="text-field">
       <img
         src="/assets/img/logo.png"
@@ -76,12 +66,6 @@
               style="background-color: transparent; color: white"
             />
           </div>
-          <!-- <div class="col-auto">
-            <span id="passwordHelpInline" class="form-text">
-              Can you think of any thing useful, or can u understand what to
-              type?
-            </span>
-          </div> -->
 
           <input
             class="btn btn-primary stage3-btn"
@@ -91,41 +75,28 @@
             style="margin-top: 2%; width: 50%"
           />
         </div>
+
+        <h1 class="display-3" style="color: grey" id="err"></h1>
+        <button
+          class="btn appear"
+          onclick="window.location.href = '/Stages/Stage4/stage4.html';"
+          id="proceedToStage4"
+        ></button>
       </div>
     </section>
 
-    <h1 class="display-3" id="err"></h1>
-    <button
-      class="btn"
-      onclick="window.location.href = '/Stages/Stage4/stage4.html';"
-      id="proceedToStage4"
-    ></button>
-
-    <script>
-      function checkInput() {
-        var a = document.getElementById("stageThreeInput");
-        if (a.value == "25" || a.value == "Twenty Five") {
-          document.getElementById("err").innerHTML =
-            "Congratulatiions, Proceed to the next Stage";
-          document.getElementById("proceedToStage4").innerHTML = "Stage 4";
-          document.getElementById("proceedToStage4").classList.add =
-            "btn-primary";
-        } else {
-          document.getElementById("err").innerHTML = "wrong";
-        }
-      }
-    </script>
+    <script src="stage3.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
       integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
       crossorigin="anonymous"
     ></script>
-    <script
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
       integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
       crossorigin="anonymous"
-    ></script>
+    ></scrip> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

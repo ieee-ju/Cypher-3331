@@ -29,7 +29,16 @@ a.luck {
 }
 
 .stage3-btn {
-  margin-top: 2%;
+  margin-top: 5%;
   background-color: #808080;
-  border: white;
+  border-color: white;
+}
+
+.appear {
+  display: none;
+}
+
+.stage4btn {
+  background-color: #808080;
+  border-color: white;
 }

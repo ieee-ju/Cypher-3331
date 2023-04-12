@@ -30,8 +30,11 @@ div.stageTwo {
   width: 100px !important;
   background-color: #1b222c;
   color: #fff;
+  border-color: #003153;
 }
 
 .proceed-stage-3:hover {
   background-color: #003153;
+  color: #fff;
+  border-color: #1b222c;
 }
