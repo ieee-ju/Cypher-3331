@@ -2,9 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75vh;
+  height: 80vh;
   flex-direction: column;
 }
 h1.text-center {
   width: 60%;
+  font-size: 28px;
+  margin: 2% 0;
 }

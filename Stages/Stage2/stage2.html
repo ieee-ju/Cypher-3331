@@ -19,62 +19,70 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Stage 2</h1>
+    <div class="stageTwo">
+      <h1 style="color: #fff">Stage 2</h1>
+      <h1 class="display-4" style="margin: 0 0 1% 0; color: #fff">
+        What If Cryptography Just Works Randomly?
+      </h1>
 
-    <video
-      src="/assets/Stage2.mp4"
-      class="object-fit-cover border rounded"
-      width="600"
-      height="500"
-      controls
-    ></video>
+      <video
+        src="/assets/Stage2.mp4"
+        class="object-fit-cover border rounded"
+        width="800"
+        height="600"
+        controls
+      ></video>
 
-    <div class="invisibleButton">
-      <button
-        type="button"
-        class="btn-invisible"
-        type="submit"
-        value="Submit"
-        onclick="showTextField()"
-      >
-        You found Me?
-      </button>
-    </div>
-
-    <div class="row g-3 align-items-center appear" id="show-now">
-      <div class="col-auto">
-        <label for="stageTwoInput" class="col-form-label">Password</label>
+      <div class="invisibleButton">
+        <button
+          type="button"
+          class="btn-invisible"
+          type="submit"
+          value="Submit"
+          onclick="showTextField()"
+        >
+          Found Me?
+        </button>
       </div>
-      <div class="col-auto">
+
+      <div
+        class="row g-3 align-items-center appear"
+        style="margin: 2.5%"
+        id="show-now"
+      >
+        <!-- <div class="col-auto">
+          <label for="stageTwoInput" class="col-form-label">Password</label>
+        </div> -->
+        <div class="col-auto">
+          <input
+            type="text"
+            id="stageTwoInput"
+            class="form-control"
+            aria-labelledby="passwordHelpInline"
+          />
+        </div>
+        <!-- <div class="col-auto">
+          <span id="passwordHelpInline" class="form-text">
+            Must be 8-20 characters long.
+          </span>
+        </div> -->
+
         <input
-          type="text"
-          id="stageTwoInput"
-          class="form-control"
-          aria-labelledby="passwordHelpInline"
+          class="btn btn-primary proceed-stage-3"
+          type="submit"
+          value="Submit"
+          onclick="checkInput()"
+          style="width: 10%; margin-top: 5%"
         />
       </div>
-      <div class="col-auto">
-        <span id="passwordHelpInline" class="form-text">
-          Must be 8-20 characters long.
-        </span>
-      </div>
 
-      <input
-        class="btn btn-primary"
-        type="submit"
-        value="Submit"
-        onclick="checkInput()"
-        style="width: 10%; margin: 5%"
-      />
+      <h1 class="display-5" style="color: #fff" id="err"></h1>
+      <button
+        class="appear"
+        onclick="window.location.href = '/Stages/Stage3/stage3.html';"
+        id="proceedToStage3"
+      ></button>
     </div>
-
-    <h1 class="display-3" id="err"></h1>
-    <button
-      class="btn"
-      onclick="window.location.href = '/Stages/Stage3/stage3.html';"
-      id="proceedToStage3"
-    ></button>
-
     <script>
       function showTextField() {
         document.getElementById("show-now").classList.remove("appear");
@@ -84,14 +92,15 @@
     <script>
       function checkInput() {
         var a = document.getElementById("stageTwoInput");
-        if (a.value == "...-.-. .-. . .") {
+        if (a.value == "... -.-. .-. . . -.  - --- .--.  .-. .. --. .... -") {
           document.getElementById("err").innerHTML =
             "Congratulatiions, Proceed to the next Stage";
           document.getElementById("proceedToStage3").innerHTML = "Stage 3";
+          document.getElementById("proceedToStage3").classList.remove("appear");
           document.getElementById("proceedToStage3").classList.add =
-            "btn btn-primary";
+            "btn proceed-stage-3";
         } else {
-          document.getElementById("err").innerHTML = "Wrong Answer";
+          document.getElementById("err").innerHTML = "Wrong Answer :(";
         }
       }
     </script>
