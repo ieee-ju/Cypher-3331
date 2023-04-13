@@ -1,11 +1,7 @@
 function checkInput() {
   var a = document.getElementById("stageTwoInput");
-  if (a.value == "SCREEN TOP RIGHT") {
-    document.getElementById("err").innerHTML =
-      "Congratulations, Proceed to the next Stage";
-    document.getElementById("proceedToStage3").innerHTML = "Stage 3";
-    document.getElementById("proceedToStage3").classList.remove("appear");
-    document.getElementById("proceedToStage3").classList.add("proceed-stage-3");
+  if (a.value == "SCREEN TOP RIGHT" || a.value == "screen top right") {
+    location.href = "/Stages/Stage3/stage3.html";
   } else {
     document.getElementById("err").innerHTML = "Wrong Answer :(";
   }
